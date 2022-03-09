@@ -9,6 +9,8 @@ import { TaskMakerComponent } from './task-maker/task-maker.component';
 import { TaskManualComponent } from './task-manual/task-manual.component';
 import { TaskHelperComponent } from './task-helper/task-helper.component';
 import { ListExporterComponent } from './list-exporter/list-exporter.component';
+import { HomeComponent } from './home/home.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -18,11 +20,13 @@ import { ListExporterComponent } from './list-exporter/list-exporter.component';
     TaskMakerComponent,
     TaskManualComponent,
     TaskHelperComponent,
-    ListExporterComponent
+    ListExporterComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

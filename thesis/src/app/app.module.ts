@@ -11,6 +11,9 @@ import { TaskHelperComponent } from './task-helper/task-helper.component';
 import { ListExporterComponent } from './list-exporter/list-exporter.component';
 import { HomeComponent } from './home/home.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HomeContainerComponent } from './home-container/home-container.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { MatInputModule } from '@angular/material/input';
 
 @NgModule({
   declarations: [
@@ -21,12 +24,15 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     TaskManualComponent,
     TaskHelperComponent,
     ListExporterComponent,
-    HomeComponent
+    HomeComponent,
+    HomeContainerComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    ReactiveFormsModule,
+    MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]
